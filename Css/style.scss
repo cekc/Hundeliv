@@ -7,11 +7,18 @@
     /*6.1.header*/
     /*6.2.main*/
     /*6.3.footer*/
+/*7.mobil responsiv*/
 /*tableof content - slut*/
+
 /*3.general*/
 *{
     margin: 0px;
     box-sizing: border-box;
+    /*outline: 1px solid red;*/
+}
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 a{
     font-family: partial.$secondary-font;
@@ -20,7 +27,7 @@ h1{
     font-size: 5vw;
 }
 h2{
-    font-size: 5vw;
+    font-size: 4vw;
 }
 .pri-h{
     font-family: partial.$primary-font;
@@ -30,9 +37,21 @@ h2{
     min-width: 68vw;
     padding: 3vw;
 }
-p{
+.alt-h{
+    font-family: partial.$tertiery-font;
+    color: partial.$primary-color;
+    font-size: 8vw;
+}
+h3{
+    background-color: partial.$primary-color;
     font-family: partial.$secondary-font;
     font-size: 2vw;
+    min-width: 68vw;
+    padding: 3vw;
+}
+p{
+    font-family: partial.$secondary-font;
+    font-size: 1.5vw;
     color: partial.$secondary-color;
     line-height: 3.5vw;
     background-color: partial.$primary-color;
@@ -61,13 +80,13 @@ div.top-bg{
 }
 .hidden-nav{
     display: none; 
-    width: 30vw;
+    width: 40vw;
     height: fit-content; 
     background-color: partial.$tertiery-color;
     position: fixed;
     top: 10vw; 
-    border-radius: 0 2vw 2vw 0;
-    border-top: 1px solid white;
+    border-radius: 0 0 2VW 0;
+    border-top: NONE;
     border-right: 1px solid white;
     border-bottom: 1px solid white;
     z-index: 2; 
@@ -80,7 +99,7 @@ div.top-bg{
         text-decoration: none;   
         margin: 0 0 0 3vw !important;
         &:hover{
-           color: partial.$secondary-color; 
+            text-transform: uppercase;
         }
         &.active{
             text-decoration: underline;
@@ -125,11 +144,15 @@ header{
 }
 /*6.2.main*/
 main{
-    grid-area: main;   
+    grid-area: main;  
 }
 .sec-col-1{
+    
     @include partial.flex();
     flex-direction: column;
+    *{
+        max-width: 68VW;
+    }
     div{
         width: 100%;
         height: fit-content;
@@ -147,6 +170,86 @@ main{
         height: auto;
     }
 }
+.sec-col-1-alt{
+    @include partial.flex();
+    flex-direction: column;
+    button:first-of-type{
+        margin-top: 0 !important;
+    }
+    button{
+        margin-top: 5vw;
+        margin-left: 3vw;
+    }
+    .picker-container{
+        background-color: white;
+    }
+}
+.collapsible{
+    @include partial.btn();
+    width: 90%;
+    text-align: left;
+    border-radius: 1vw 1vw 0 0 !important;
+    border: none !important;
+}
+.collapsible:after{
+    content: '\002B';
+    color: partial.$primary-color;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;  
+}
+.active-picker:after{
+    content: "\2212";
+    }
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: right !important;
+}
+.vet{
+    background-image: url(../Img/dog_vet.svg);
+}
+.training{
+    background-image: url(../Img/dog_training.svg);  
+}
+.food{
+    background-image: url(../Img/dog_eating.svg);  
+}
+.etiquette{
+    background-image: url(../Img/dog_peeing.svg);
+}
+.dog-lang{
+    background-image: url(../Img/dog_howling.svg);
+    h2{
+        margin-left: 0 !important;
+    }
+    img{
+        margin-top: 63vw;
+        width: 100%;
+        height: auto;
+    }
+}
+.sec-bg-img{
+    background-repeat: no-repeat;
+    background-size: 100vw; 
+}
+.no-pad{
+    h2{
+        margin-left: 25vw;
+    }  
+    ul{
+        margin-top: 65vw;
+        padding: 0;
+        li{
+            list-style-type: none;
+            p{
+                padding-top: 1vw !important;
+                padding-bottom: 1vw !important;
+            }
+        }
+    }    
+}
 /*6.3.footer*/
 footer{
     grid-area: footer;
@@ -160,4 +263,17 @@ footer{
         } 
     }  
 }
-
+/*7.mobil responsiv*/
+p{
+    font-size: 3.5vw;
+    line-height: 6vw;
+}
+div.top-bg{
+    height: 14vw;
+}
+.burger-nav{
+    font-size: 8vw;
+}
+.hidden-nav{
+    top: 14vw;
+}

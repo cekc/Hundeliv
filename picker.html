@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <!--META CHARSET-->
+    <meta charset="UTF-8">
+    <!--META VIEWPORT-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--META ROBOTS-->
+    <meta name=”robots” content="#">
+    <!--META DESCRIPTION-->
+    <meta name="description" content="#">
+    <!--(META) TITLE-->
+    <title>Forside | Hundeliv</title>
+    <!--IMPORT FONTE PRECONNECT GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--IMPORT FONT ARCHITECTS DAUGHTER-->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <!--IMPORT FONT ARMATA-->
+    <link href="https://fonts.googleapis.com/css2?family=Armata&display=swap" rel="stylesheet">
+    <!--IMPORT BERLIN SANS FB DEMI-->
+    <link href="https://fonts.cdnfonts.com/css/berlin-sans-fb-demi" rel="stylesheet">
+    <!--IMPORT ICONS FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/26e58688d6.js" crossorigin="anonymous"></script>
+    <!--IMPORT/LINK TIL STYLESHEET(S)-->
+    <link rel="stylesheet" href="Css/style.css"> 
+</head>
+<body>
+    <!--NAVIGATION-->
+    <!--BURGER MENU/MOBIL MENU-->
+    <div class="top-bg"> </div> 
+    <nav>
+        <div class="burger-nav">
+            <i class="navToggle fa-solid fa-bars"></i>
+        </div>
+        <!--DESKTOP MENU-->
+        <div class="hidden-nav">
+            <a class="" href="index.html">Forside</a>
+            <a class="active" href="#">Hundevælger guiden</a>
+            <a class="" href="rules.html">Hundens trivsel</a>
+        </div>
+    </nav>
+    <!--LOGO-->
+    <a class="logo" href="index.html" aria-label="logo">Hundeliv.dk</a>
+    <div class="grid-container">
+        <!--HEADER-->
+        <header>
+        </header>
+        <!--MAIN-->
+        <main>
+            <section class="sec-col-1">
+                <h1 class="pri-h">Find den helt rigtige hund.</h1>
+                <p>Velkommen til Hundeliv.dk's hundevælger guide, hvor vi hjælper dig med at finde den perfekte hunderace, der passer til dine behov, livsstil og præferencer. At vælge den rigtige hunderace er en vigtig beslutning, der vil påvirke dit liv i mange år fremover, og vi er her for at sikre, at du træffer den bedst mulige beslutning.</p>
+                <p>Vores mål er at sikre, at både du og din kommende hund lever et lykkeligt og harmonisk liv sammen. Så tag det første skridt mod at finde din ideelle hunderace ved at udforske vores omfattende ressourcer her på Hundeliv.dk.</p>
+            </section>
+            <section class="sec-img">
+                <img src="Img/dog_selection.svg" alt="decorativt billede af forskellige hunde ansigter">
+            </section>
+            <!--ADVARSEL - HER HAR JEG LEGET OG HAR IKKE HUNDREDE PROCENT STYR PÅ DET, MEN RESULTATET ER BLEVET OK, SYNTES JEG. DET HELE ER TAGET FRA W3SCHOOLS-->
+            <section class="sec-col-1-alt">
+                <h2 class="pri-h">Hundevælger Guiden.</h2>
+                <h3>Vi har kategoriseret hunderacerne, så du nemt og overskueligt kan finde den race der passer til dig.</h3>
+                <div class="picker-container">
+                    <button class="collapsible">Familiehunde</button>
+                    <div class="content">
+                        <div>
+                            <p><b>Labrador Retriever</b> - Kendt for sin venlighed og tålmodighed, er denne hund det perfekte valg for familier i alle størrelser.</p>
+                            <hr>
+                            <p><b>Golden Retriever</b> - Med sit kærlige temperament og evne til at tilpasse sig enhver situation er denne hund en skøn tilføjelse til enhver familie.</p>
+                            <hr>
+                            <p><b>Beagle</b> - Charmerende og legesyg, denne hund vil bringe masser af glæde til hele familien med dens livlige personlighed.</p>
+                            <hr>
+                            <p><b>Bulldog</b> - Trofast og kærlig, denne hund er en fantastisk ledsager for børn og voksne ens.</p>
+                            <hr>
+                            <p><b>Boxer</b>- Energi og kærlighed i en kompakt pakke, denne hund vil være en livlig tilføjelse til enhver familie.</p>
+                        </div>
+                    </div>
+                    <button class="collapsible">Hunde til singler</button>
+                    <div class="content">
+                        <div>
+                            <p>liste med hunde til singler</p>
+                        </div>
+                    </div>
+                    <button class="collapsible">Skødehunde</button>
+                    <div class="content">
+                        <div>
+                            <p>Liste med skødehunde</p>
+                        </div>    
+                    </div>
+                    <button class="collapsible">Eventyrlystne hunde</button>
+                    <div class="content">
+                        <div>
+                            <p>Liste med eventyrlystne hunde</p>
+                        </div>    
+                    </div>
+                    <button class="collapsible">Vagthunde</button>
+                    <div class="content">
+                        <div>
+                            <p>Liste med vagthunde</p>
+                        </div>    
+                    </div>
+                    <button class="collapsible">Jagthunde</button>
+                    <div class="content">
+                        <div>
+                            <p>Liste med Jagthunde</p>
+                        </div>    
+                    </div>
+                    <button class="collapsible">Andre typer arbejdshunde</button>
+                    <div class="content">
+                        <div>
+                            <p>Liste med arbejdshunde</p>
+                        </div>    
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--FOOTER-->
+        <footer>
+            <a href="#">Doner en godbid til os<i class="fa-solid fa-arrow-right"></i></a>
+        </footer> 
+    </div>   
+    <!--JAVASCRIPT CODE TIL DROPDOWN BURGER MENU--> 
+    <script>
+        const navbarToggle = () => {
+        const nav = document.querySelector('.hidden-nav');
+        nav.classList.toggle('toggleShow');
+        }
+        document.querySelector('.navToggle').addEventListener('click', navbarToggle);
+    </script>
+    <!--JAVASCRIPT CODE TIL HUNDEVÆLGER GUIDEN--> 
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active-picker");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+</body>
+</html>

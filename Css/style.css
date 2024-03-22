@@ -1,0 +1,220 @@
+/*table of content*/
+/*1.variabler partial*/
+/*2.Mixins partial*/
+/*3.general*/
+/*4.navigation*/
+/*5.logo*/
+/*6.header, main og footer grid*/
+/*6.1.header*/
+/*6.2.main*/
+/*6.3.footer*/
+/*tableof content - slut*/
+/*3.general*/
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  font-family: "armata";
+}
+
+h1 {
+  font-size: 5vw;
+}
+
+h2 {
+  font-size: 5vw;
+}
+
+.pri-h {
+  font-family: "architects daughter";
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  min-width: 68vw;
+  padding: 3vw;
+}
+
+p {
+  font-family: "armata";
+  font-size: 2vw;
+  color: #000;
+  line-height: 3.5vw;
+  background-color: #fff;
+  text-align: justify;
+  padding: 5vw;
+}
+
+/*4.navigation*/
+div.top-bg {
+  background-color: #5287C9;
+  width: 100vw;
+  height: 12vw;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.burger-nav {
+  width: 5vw;
+  height: auto;
+  font-size: 5vw;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 0 0 3vw;
+  position: fixed;
+  top: 3vw;
+  z-index: 1;
+}
+
+.hidden-nav {
+  display: none;
+  width: 30vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #5287C9;
+  position: fixed;
+  top: 10vw;
+  border-radius: 0 2vw 2vw 0;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+.hidden-nav a {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  font-size: 3vw;
+  color: #fff;
+  line-height: 7.5vw;
+  text-decoration: none;
+  margin: 0 0 0 3vw !important;
+}
+.hidden-nav a:hover {
+  color: #000;
+}
+.hidden-nav a.active {
+  text-decoration: underline;
+}
+
+.toggleShow {
+  display: flex !important;
+  flex-direction: column;
+}
+
+/*5.logo*/
+.logo {
+  font-family: "architects daughter";
+  font-size: 7vw;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  top: 1.5vw;
+  left: 60vw;
+  z-index: 1;
+}
+
+/*6.header, main og footer grid*/
+.grid-container {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  display: grid;
+  grid-template-rows: 38vw auto auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+/*6.1.header*/
+header {
+  grid-area: header;
+  background-image: url(../Img/dogs_header.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*6.2.main*/
+main {
+  grid-area: main;
+}
+
+.sec-col-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw 16vw;
+  flex-direction: column;
+}
+.sec-col-1 div {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 5vw 16vw;
+  flex-direction: column;
+}
+.sec-col-1 div a {
+  background-color: #5287C9;
+  color: #fff;
+  font-family: "armata";
+  font-size: 2vw;
+  padding: 2vw 2vw;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid white;
+  border-right: none;
+  border-top: none;
+  border-radius: 0 0 0 1vw;
+}
+.sec-col-1 div a:hover {
+  color: #000;
+}
+.sec-col-1 div a i {
+  margin: 0 2.5vw;
+}
+
+.sec-img img {
+  width: 100vw;
+  height: auto;
+}
+
+/*6.3.footer*/
+footer {
+  grid-area: footer;
+  background-color: #5287C9;
+  padding: 3vw 0 !important;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5vw 16vw;
+}
+footer a {
+  background-color: #fff;
+  color: #000;
+  font-family: "armata";
+  font-size: 2vw;
+  padding: 2vw 2vw;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid white;
+  border-right: none;
+  border-top: none;
+  border-radius: 0 0 0 1vw;
+}
+footer a:hover {
+  color: #000;
+}
+footer a i {
+  margin: 0 2.5vw;
+}
+footer a:hover {
+  color: #5287C9;
+}/*# sourceMappingURL=style.css.map */

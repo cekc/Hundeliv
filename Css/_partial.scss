@@ -1,0 +1,39 @@
+/*table of content*/
+/*1.variabler partial*/
+$primary-color: #fff;
+$secondary-color: #000;
+$tertiery-color: #5287C9;
+$quaternary-color: #41C5FD;
+$primary-font: 'architects daughter';
+$secondary-font: 'armata';
+$tertiery-font: 'berlin sans fb demi';
+
+/*2.Mixins partial*/
+@mixin flex($justify: center, $align: center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    padding: 5vw 16vw;
+}
+
+@mixin btn($bg-color: $tertiery-color, $font-color: $primary-color){
+    background-color: $bg-color;
+    color: $font-color;
+    font-family: $secondary-font;
+    font-size: 2vw;
+    padding: 2vw 2vw;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid white;
+    border-right: none;
+    border-top: none;
+    border-radius: 0 0 0 1vw;
+    &:hover{
+        color: $secondary-color;
+    }
+    i{
+        margin: 0 2.5vw;
+
+    } 
+}

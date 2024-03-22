@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <!--META CHARSET-->
+    <meta charset="UTF-8">
+    <!--META VIEWPORT-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--META ROBOTS-->
+    <meta name=”robots” content="#">
+    <!--META DESCRIPTION-->
+    <meta name="description" content="#">
+    <!--(META) TITLE-->
+    <title>Forside | Hundeliv</title>
+    <!--IMPORT FONTE PRECONNECT GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--IMPORT FONT ARCHITECTS DAUGHTER-->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <!--IMPORT FONT ARMATA-->
+    <link href="https://fonts.googleapis.com/css2?family=Armata&display=swap" rel="stylesheet">
+    <!--IMPORT BERLIN SANS FB DEMI-->
+    <link href="https://fonts.cdnfonts.com/css/berlin-sans-fb-demi" rel="stylesheet">
+    <!--IMPORT ICONS FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/26e58688d6.js" crossorigin="anonymous"></script>
+    <!--IMPORT/LINK TIL STYLESHEET(S)-->
+    <link rel="stylesheet" href="Css/style.css"> 
+</head>
+<body>
+    <!--NAVIGATION-->
+    <!--BURGER MENU/MOBIL MENU-->
+    <div class="top-bg"> </div> 
+    <nav>
+        <div class="burger-nav">
+            <i class="navToggle fa-solid fa-bars"></i>
+        </div>
+        <!--DESKTOP MENU-->
+        <div class="hidden-nav">
+            <a class="active" href="">Forside</a>
+            <a href="">Hundevælgeren</a>
+            <a href="">Hundens trivsel</a>
+        </div>
+    </nav>
+    <!--LOGO-->
+    <a class="logo" href="#" aria-label="logo">Hundeliv.dk</a>
+    <div class="grid-container">
+        <!--HEADER-->
+        <header>
+        </header>
+        <!--MAIN-->
+        <main>
+            <section class="sec-col-1">
+                <h1 class="pri-h">Velkommen til Hundeliv.dk - din ultimative guide til livet med hunde!</h1>
+                <p>Hunde er virkelig bemærkelsesværdige skabninger. Deres loyale natur går dybt, hvilket skaber et ubrydeligt bånd mellem dem og os, men denne glæde kommer også med et væsentligt ansvar. Vi er her for at guide dig gennem denne rejse og give dig den nødvendige viden og indsigt til at træffe informerede beslutninger for din hunds velbefindende. Fra at vælge den rigtige race til at forstå ernæringsbehovene, træningsmetoderne og sundhedspleje - vi dækker det hele!</p>              
+            </section>
+            <section class="sec-img">
+                <img src="Img/dog_howling.svg" alt="decorativt billede af hund der hyler mod himlen">
+            </section>
+            <section class="sec-col-1">
+                <h2 class="pri-h">Den helt rigtige hund.</h2>
+                <p>Hos Hundeliv.dk mener vi, at det er vigtigt at overveje nøje, hvilket formål ens hund skal tjene. Uanset om det er som en kærlig familiehund, en opmærksom vagthund eller en venlig terapihund, kræver hver rolle forskellige hensyn og træning. Når vi vælger vores hunds formål, påtager vi os en forpligtelse til at matche dens personlighed og temperament med de opgaver, den skal udføre. En hund, der skal være en del af familien, skal være venlig, tålmodig og trænet til at interagere positivt med mennesker i alle aldre. Den skal også være i stand til at tilpasse sig familiens livsstil og rutiner, og være en stabil og pålidelig følgesvend.</p>
+                <div>
+                     <a href="#">Find din hunderace<i class="fa-solid fa-arrow-right"></i></a>
+                </div>       
+            </section>
+            <section class="sec-img">
+                <img src="Img/dog_active.svg" alt="decorativt billede af hund der løber og er glad">
+            </section>
+            <section class="sec-col-1">
+                <h2 class="pri-h">Et godt hundeliv.</h2>
+                <p>Her på Hundeliv.dk finder du en værdifuld samling af information og rådgivning, der hjælper dig med at give din hund den bedst mulige pleje og omsorg. Uanset om du er en ny hundeejer eller en erfaren hundepasser, finder du alt det, du har brug for at vide om træning, sundhed, ernæring og etikette her på Hundeliv.dk. Så lad os sammen skabe et sundere, gladere og mere opfyldende liv for vores elskede hunde!</p>
+                <div>
+                    <a href="#">Læs mere om trivsel<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </section>
+        </main>
+        <!--FOOTER-->
+        <footer>
+            <a href="#">Doner en godbid til os<i class="fa-solid fa-arrow-right"></i></a>
+        </footer> 
+    </div>   
+    <!--JAVASCRIPT CODE TIL DROPDOWN BURGER MENU--> 
+    <script>
+        const navbarToggle = () => {
+        const nav = document.querySelector('.hidden-nav');
+        nav.classList.toggle('toggleShow');
+        }
+        document.querySelector('.navToggle').addEventListener('click', navbarToggle);
+    </script>
+</body>
+</html>

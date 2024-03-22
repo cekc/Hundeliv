@@ -99,7 +99,7 @@ div.top-bg {
   position: fixed;
   top: 10vw;
   border-radius: 0 0 2VW 0;
-  border-top: NONE;
+  border-top: 1px solid white;
   border-right: 1px solid white;
   border-bottom: 1px solid white;
   z-index: 2;
@@ -359,19 +359,18 @@ footer a:hover {
 }
 
 /*7.mobil responsiv*/
-p {
-  font-size: 3.5vw;
-  line-height: 6vw;
-}
-
-div.top-bg {
-  height: 14vw;
-}
-
-.burger-nav {
-  font-size: 8vw;
-}
-
-.hidden-nav {
-  top: 14vw;
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 3.5vw;
+    line-height: 6vw;
+  }
+  div.top-bg {
+    height: 14vw;
+  }
+  .burger-nav {
+    font-size: 8vw;
+  }
+  .hidden-nav {
+    top: 14vw;
+  }
 }/*# sourceMappingURL=style.css.map */
